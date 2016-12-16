@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :trails
   get 'static_pages/contact'
 
   get 'static_pages/privacy'
