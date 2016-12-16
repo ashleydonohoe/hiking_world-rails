@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'static_pages/contact'
+
+  get 'static_pages/privacy'
+
   get 'static_pages/about'
 
   root 'static_pages#index'

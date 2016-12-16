@@ -323,6 +323,11 @@ footer a {
 .footer {
     margin-top: 300px;
     position: relative;
+    left: 0;
+}
+
+footer.row {
+    margin-left: -30px;
 }
 
 .navbar-default a:hover {
@@ -396,6 +401,6 @@ footer a {
     }
 
     .footer {
-    margin-top: 400px;
+        margin-top: 400px;
     }
 }
