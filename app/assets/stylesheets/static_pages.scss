@@ -1,0 +1,401 @@
+// Place all the styles related to the static_pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.navbar-brand {
+    font-size: 30px;
+}
+
+#logo-icon {
+    float: left;
+    margin-top: 2px;
+    height: 40px;
+    margin-right: 20px;
+    padding-left: 2px;
+}
+
+.edit-button {
+    float: left;
+    margin-top: 5px;
+}
+
+.delete-button {
+    margin: 0;
+}
+
+.fa-arrow-left {
+    color: #3498db;
+}
+
+body {
+    background: #eeeeee;
+    font-family: Avenir, sans-serif;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
+
+h2 {
+    color: #143306;
+}
+
+.navbar i {
+    color: white;
+}
+
+.thumbnail {
+    text-align: center;
+    font-size: 18px;
+    box-shadow: 2px 2px 2px 2px #3498db;
+}
+
+video {
+    width: 100%;
+}
+
+.thumbnail img {
+    max-height: 250px;
+}
+
+/*.thumbnail video {*/
+/*    max-height: 250px;*/
+/*    width: 100%;*/
+/*}*/
+
+.playersection #videoplayer video {
+    height: 500px;
+}
+
+.greeting {
+    /*width: 50%;*/
+    text-align: center;
+}
+
+.navbar-default {
+    background: #143306;
+    margin-bottom: 0;
+    border: none;
+}
+
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand,
+           .navbar-default .navbar-nav>li>a {
+    color: white;
+}
+
+.jumbotron {
+    background: url("http://imgh.us/hero_6.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    color: white;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.news-post {
+    width: 80%;
+    float: none;
+    margin: 10px auto;
+}
+
+.news-post hr {
+    color: #3498db;
+    background: #3498db;
+    height: 2px;
+    opacity: 0.4;
+}
+
+#videoplayer {
+    width: 100%;
+    float: none;
+    margin: 0 auto;
+}
+
+.nav-item {
+    background-color: white;
+    margin-right: 10px;
+}
+
+.tab-content {
+    margin-top: 5px;
+}
+
+.jumbotron {
+    color: white;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    background-color: #143306;
+    color: white;
+}
+
+.nav-tabs > li > a {
+    color: #143306;
+}
+
+#imagebox {
+    width: 70%;
+    float: none;
+    margin: 0 auto;
+}
+
+.page-heading {
+    color: #143306;
+}
+
+#imagebox img {
+    max-height: 400px;
+    height: auto;
+    max-width: 100%;
+}
+
+.post-button {
+    float: right;
+    display: block;
+}
+
+.btn-primary,
+.btn-default {
+    background-color: #143306;
+    color: white;
+}
+
+/*// Comment Form Stuff*/
+
+
+.comment-area {
+    width: 60%;
+    margin: 5% auto;
+    display: none;
+}
+
+#comment-box {
+    height: 100px;
+}
+
+#comment-actions {
+    background: silver;
+    height: 70px;
+}
+
+/*Emoji Styles*/
+#action-list ul,
+#media-actions ul {
+    list-style: none;
+}
+
+#action-list {
+    margin-top: 10px;
+}
+
+#icons li {
+    float: left;
+    margin-right: 30px;
+    margin-top: 10px;
+}
+
+#media-actions li {
+    float: right;
+    margin-right: 30px;
+}
+
+#icons {
+    font-size: 18px;
+}
+
+.comment-list {
+    max-width: 70%;
+    margin: 2% auto;
+}
+
+.fa-trash {
+    background-color: red;
+    padding: 2px;
+}
+
+.fa-pencil {
+    background: blue;
+    padding: 2px;
+}
+
+.fa-floppy-o {
+    background: purple;
+    padding: 2px;
+}
+
+#addComment {
+    margin-top: 2%;
+}
+
+#upload-form {
+    width: 70%;
+    margin: 0 auto;
+}
+
+
+.comment-list .row {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #3498db;
+    padding: 5px;
+}
+
+.container {
+    width: 100%;
+}
+
+
+
+.login-form,
+.signup-form {
+    margin: 0 auto;
+    max-width: 60%;
+}
+
+.profile-data p {
+    color: black;
+    font-size: 20px;
+}
+
+[data-notify="progressbar"] {
+    margin-bottom: 0px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 5px;
+}
+
+#comment-count {
+    background-color: #337ab7;
+    color: white;
+    padding: 3px;
+    margin-left: 10px;
+    margin-top: 5px;
+    font-size: 12px;
+
+}
+
+.features {
+    margin-top: 2%;
+    text-align: center;
+}
+
+.features .fa,
+.features h3 {
+    color: saddlebrown;
+}
+
+.directions {
+    background-color: whitesmoke;
+    padding: 2%;
+}
+
+.directions img {
+    max-height: 250px;
+}
+
+.hike-info {
+    padding: 2%;
+}
+
+.hike-info img {
+    max-height: 250px;
+}
+
+footer {
+    background-color: #143306;
+    color: white;
+    width:100%;
+    height: 200px;
+    position:absolute;
+    bottom:0;
+}
+
+footer a {
+    color: white;
+    margin: 1px; 
+    font-size: 12px;
+}
+
+.footer {
+    margin-top: 300px;
+    position: relative;
+}
+
+.navbar-default a:hover {
+    color: white !important;
+}
+
+.feature {
+    width: 33%;
+}
+
+#addFeature {
+    display: block;
+}
+
+@media (max-width: 500px) {
+
+    #comment-actions {
+        height: 90px;
+    }
+
+    #icons {
+        font-size: 14px;
+    }
+
+    .jumbotron {
+        height: 300px;
+    }
+
+    .jumbotron h1 {
+        font-size: 24px;
+        margin: 0 auto;
+    }
+
+    .greeting {
+        width: 100%;
+        float: none;
+        margin: 180px auto 10px;
+    }
+
+    #home .thumbnail {
+        height: 200px;
+    }
+
+    #home .thumbnail img,
+    #home .thumbnail video,
+    #news .thumbnail {
+        height: 150px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    h3, p {
+        font-size: 14px;
+    }
+
+    #imagebox {
+        width: 90%;
+    }
+
+    .comment-area {
+        width: 90%;
+    }
+}
+
+
+@media (max-width:768px) {
+    footer {
+        height: 330px;
+    }
+
+    .footer {
+    margin-top: 400px;
+    }
+}
