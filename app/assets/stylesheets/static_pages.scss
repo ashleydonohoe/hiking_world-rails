@@ -2,6 +2,14 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+
+
 .navbar-brand {
     font-size: 30px;
 }
@@ -31,6 +39,7 @@ body {
     background: #eeeeee;
     font-family: Avenir, sans-serif;
     box-sizing: border-box;
+    margin-bottom: 150px;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -249,6 +258,7 @@ video {
 
 .container {
     width: 100%;
+    min-height: 100%;
 }
 
 
@@ -325,12 +335,6 @@ footer a {
     font-size: 12px;
 }
 
-.footer {
-    margin-top: 300px;
-    left: 0;
-    bottom: 0;
-    position: relative;
-}
 
 .navbar-default a:hover {
     color: white !important;
