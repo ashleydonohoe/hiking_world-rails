@@ -1,29 +1,70 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @trail.name %>
-</p>
+<div class="container">
+  <div class="row">
+      <div class="col-md-12">
+        <h1 class="page-heading"><%= @trail.name %></h1>
+        <h2 class="text-center">Location: <%= @trail.location%></h2>
+      </div>
+  </div>
+   <div class="row text-center">
+      <div class="col-md-12">
+          <div class="thumbnail" id="imagebox">
+            <%= image_tag(@trail.image, class: "img-responsive")%>
+          </div>
+        </div>
+   </div>
+   
+   <div class="row">
+     <div class="col-md-12">
+           <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#description" role="tab">Description</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#features" role="tab">Features</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#map" role="tab">Map</a>
+            </li>
+        </ul>
+    
+    <!--Info boxes-->
+    <div class="tab-content">
+            <div class="tab-pane active" id="description" role="tabpanel">
+                <div id="description">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <p><%= @trail.description %></p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane" id="features" role="tabpanel">
+                <div id="features">
+                    <div class="row">
+                      <div class="col-md-4">
+                          <p><%= @trail.features %></p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane" id="map" role="tabpanel">
+                <div id="map">
+                    <div class="row">
+                      <div class="col-md-4">
+                          <!--Placeholder for Google Maps-->
+                          <img class="img-responsive center-block" src="http://i.imgur.com/DbZpLSG.jpg" alt="directions">
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+    
+    <!--TODO: Google Maps in box-->
+</div> <!-- Close main container --> 
+<div class="container footer">
 
-<p>
-  <strong>Image:</strong>
-  <%= @trail.image %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @trail.description %>
-</p>
-
-<p>
-  <strong>Location:</strong>
-  <%= @trail.location %>
-</p>
-
-<p>
-  <strong>Features:</strong>
-  <%= @trail.features %>
-</p>
-
-<%= link_to 'Edit', edit_trail_path(@trail) %> |
-<%= link_to 'Back', trails_path %>

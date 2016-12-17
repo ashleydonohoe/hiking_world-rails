@@ -49,7 +49,8 @@ h2 {
 .thumbnail {
     text-align: center;
     font-size: 18px;
-    box-shadow: 2px 2px 2px 2px #3498db;
+    box-shadow: 2px 2px 2px 2px green;
+    margin-top: 1em;
 }
 
 video {
@@ -127,6 +128,10 @@ video {
     color: white;
 }
 
+.nav-tabs {
+    margin-top: 30px;
+}
+
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
     background-color: #143306;
     color: white;
@@ -144,6 +149,7 @@ video {
 
 .page-heading {
     color: #143306;
+    text-align: center;
 }
 
 #imagebox img {
@@ -309,7 +315,7 @@ footer {
     background-color: #143306;
     color: white;
     width:100%;
-    height: 200px;
+    height: 170px;
     position:absolute;
     bottom:0;
 }
@@ -321,9 +327,10 @@ footer a {
 }
 
 .footer {
-    margin-top: 300px;
+    margin-top: 400px;
     position: relative;
     left: 0;
+    bottom: 0;
 }
 
 // footer.row {
