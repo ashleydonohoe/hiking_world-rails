@@ -25,8 +25,16 @@
                 <%= f.text_area :description %>
             </div>
             <div class="field form-group">
-                <%= f.label :location %>
+                <%= f.label :location, "City and State" %>
                 <%= f.text_field :location %>
+            </div>
+            <div class="field form-group">
+              <%= f.label :latitude %>
+              <%= f.text_field :latitude%>
+            </div>
+            <div class="field form-group">
+              <%= f.label :longitude %>
+              <%= f.text_field :longitude%>
             </div>
             <div class="field form-group">
                 <%= f.label :features %><br>
