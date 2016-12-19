@@ -10,7 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161218031621) do
+ActiveRecord::Schema.define(version: 20161219234743) do
+
+  create_table "pictures", force: :cascade do |t|
+    t.integer "user_id"
+    t.string  "image_url"
+    t.text    "caption"
+  end
 
   create_table "trails", force: :cascade do |t|
     t.string   "name"
