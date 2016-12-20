@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-12">
+        <h1 class="page-heading"><%= @story.story_title %></h1>
+      </div>
+  </div>
+   <div class="row text-center">
+      <div class="col-md-12">
+          <div class="thumbnail" id="imagebox">
+            <%= image_tag(@story.story_image, class: "img-responsive")%>
+          </div>
+            <p class="story-body"><%= @story.story_body%></p>
+        </div>
+   </div>
+</div> <!-- Close main container --> 
+<div class="container footer">
+
+

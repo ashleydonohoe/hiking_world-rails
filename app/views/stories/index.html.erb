@@ -1,0 +1,22 @@
+<p id="notice"><%= notice %></p>
+<div class="container main">
+     <h1 class="text-center page-heading">Stories</h1>
+     <%= link_to 'New Story', new_story_path, :class => "btn btn-primary" %>
+     
+     <div class="row text-center" style="display: flex; flex-wrap: wrap">
+   <% @stories.each do |story| %>
+    <div class="col-md-4 col-sm-6 col-xs-12">
+        <div class="thumbnail">
+          <h2><%= story.story_title %></h2>
+            <img class="img-responsive" src="<%= story.story_image %>">
+            <%= link_to 'Show', story %>
+           <%= link_to 'Edit', edit_story_path(story) %>
+           <%= link_to 'Destroy', story, method: :delete, data: { confirm: 'Are you sure?' } %>
+        </div>
+    </div>
+      <% end %>
+    </div>
+   </div>
+    
+    <div class="container">
+
