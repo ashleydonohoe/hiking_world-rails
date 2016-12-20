@@ -51,7 +51,7 @@ class PicturesController < ApplicationController
     
     private
         def set_picture
-            @picture = Trail.find(params[:id])
+            @picture = Picture.find(params[:id])
         end
         
         def picture_params
