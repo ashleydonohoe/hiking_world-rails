@@ -13,17 +13,17 @@
         </div>
         <div class="collapse navbar-collapse" id="mynavbar">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="/trails">Trails</a></li>
-                <li><a href="/pictures">Images</a></li>
-                <li><a href="/videos">Videos </a></li>
-                <li><a href="/news">Stories</a></li>
+                <li><a href="<%= trails_path %>">Trails</a></li>
+                <li><a href="<%= pictures_path%>">Images</a></li>
+                <li><a href="#">Videos </a></li>
+                <li><a href="#">Stories</a></li>
                 
                 <!--If not authorized--->
-                <li><a href="/register">Sign Up</a></li>
-                <li><a href="/login">Log In </a></li>
+                <li><a href="#">Sign Up</a></li>
+                <li><a href="#">Log In </a></li>
                 <!--Only if authorized-->
                 <li><a href=""><i class="fa fa-user" aria-hidden="true"></i> Username</a></li>
-                <li><a href="/logout">Log Out</a></li>
+                <li><a href="#">Log Out</a></li>
             </ul>
         </div>
     </div>

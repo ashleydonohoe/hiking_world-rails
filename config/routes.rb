@@ -1,12 +1,11 @@
 Rails.application.routes.draw do
   resources :trails
   resources :pictures
+  # resources :users
   
-  get 'static_pages/contact'
-
-  get 'static_pages/privacy'
-
-  get 'static_pages/about'
+  get '/contact', to: 'static_pages#contact'
+  get '/about', to: 'static_pages#about'
+  get '/privacy', to: 'static_pages#privacy'
 
   root 'static_pages#index'
 

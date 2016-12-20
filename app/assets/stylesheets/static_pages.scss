@@ -148,9 +148,14 @@ video {
     margin-top: 30px;
 }
 
-.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+.nav-tabs>li.active>a, 
+.nav-tabs>li.active>a:focus, 
+.nav-tabs>li.active>a:hover,
+footer a:hover,
+footer a:focus {
     background-color: #143306;
     color: white;
+    text-decoration: none;
 }
 
 .nav-tabs > li > a {
@@ -344,7 +349,8 @@ footer a {
 }
 
 
-.navbar-default a:hover {
+.navbar-default a:hover,
+footer a {
     color: white !important;
 }
 
