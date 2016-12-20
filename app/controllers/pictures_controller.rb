@@ -44,7 +44,7 @@ class PicturesController < ApplicationController
     def destroy
         @picture.destroy
         respond_to do |format|
-            format.html { redirect_to pictires_url, notice: "Picture was deleted." }
+            format.html { redirect_to pictures_url, notice: "Picture was deleted." }
             format.json { head :no_content }
         end
     end
