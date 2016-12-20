@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+<div class="container main">
+     <h1 class="text-center page-heading">Pictures</h1>
+     <%= link_to 'New Picture', new_picture_path, :class => "btn btn-primary" %>
+     
+     <div class="row text-center" style="display: flex; flex-wrap: wrap">
+   <% @pictures.each do |picture| %>
+    <div class="col-md-4 col-sm-6 col-xs-12">
+        <div class="thumbnail">
+          <h2><%= picture.caption %></h2>
+            <img class="img-responsive" src="<%= picture.image_url %>">
+            
+            <%= link_to 'Show', picture %>
+           <%= link_to 'Edit', edit_picture_path(picture) %>
+           <%= link_to 'Destroy', picture, method: :delete, data: { confirm: 'Are you sure?' } %>
+        </div>
+    </div>
+      <% end %>
+    </div>
+   </div>
+    
+    <div class="container">
+
