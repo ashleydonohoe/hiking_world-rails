@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   resources :trails
   resources :pictures
+  resources :videos
+  resources :stories
   # resources :users
   
   get '/contact', to: 'static_pages#contact'

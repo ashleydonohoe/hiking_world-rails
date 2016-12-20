@@ -1,4 +1,4 @@
-class PicturesController < ApplicationController
+class StoriesController < ApplicationController
     def index
     end
     
