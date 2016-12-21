@@ -1,1 +1,31 @@
 <!--Picture Add Form-->
+<div class="container form">
+    <div class="row">
+        <div class="col-md-12">
+            <%= form_for(picture) do |f| %>
+            <% if picture.errors.any? %>
+            <div id="error_explanation">
+                <h2><%= pluralize(picture.errors.count, "error") %> prohibited this picture from being saved:</h2>
+                <ul>
+                    <% picture.errors.full_messages.each do |message| %>
+                    <li><%= message %></li>
+                    <% end %>
+                </ul>
+            </div>
+            <% end %>
+            <div class="field form-group">
+                <%= f.label :caption %>
+                <%= f.text_field :caption %>
+            </div>
+            <div class="field form-group">
+                <%= f.label :image_url %>
+                <%= f.text_field :image_url %>
+            </div>
+            <div class="actions form-group">
+                <%= f.submit "Add", :class=>"btn btn-lg btn-primary" %>
+            </div>
+            <% end %>
+        </div>
+        <%= link_to 'Back', pictures_path %>
+    </div>
+</div>
