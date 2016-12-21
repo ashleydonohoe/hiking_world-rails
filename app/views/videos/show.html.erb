@@ -1,0 +1,17 @@
+<p id="notice"><%= notice %></p>
+<div class="container">
+  <div class="row">
+      <div class="col-md-12">
+        <h1 class="page-heading"><%= @video.video_title %></h1>
+      </div>
+  </div>
+   <div class="row text-center">
+      <div class="col-md-12 player-section">
+          <div class="thumbnail" id="videoplayer">
+            <video controls src="<%= @video.video_url%>" height="500"></video>
+            <p><%= @video.video_description%></p>
+          </div>
+        </div>
+   </div>
+</div> <!-- Close main container --> 
+<div class="container footer">

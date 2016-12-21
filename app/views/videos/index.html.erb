@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+<div class="container main">
+     <h1 class="text-center page-heading">Videos</h1>
+     <%= link_to 'New Video', new_video_path, :class => "btn btn-primary" %>
+     
+     <div class="row text-center" style="display: flex; flex-wrap: wrap">
+   <% @videos.each do |video| %>
+    <div class="col-md-4 col-sm-6 col-xs-12">
+        <div class="thumbnail">
+          <h2><%= video.video_title %></h2>
+            <video controls src="<%= video.video_url %>"></video>
+            
+            <%= link_to 'Show', video %>
+           <%= link_to 'Edit', edit_video_path(video) %>
+           <%= link_to 'Destroy', video, method: :delete, data: { confirm: 'Are you sure?' } %>
+        </div>
+    </div>
+      <% end %>
+    </div>
+   </div>
+    
+    <div class="container">
+
