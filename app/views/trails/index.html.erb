@@ -2,6 +2,11 @@
 <div class="container main">
      <h1 class="text-center page-heading">Trails</h1>
      <%= link_to 'New Trail', new_trail_path, :class => "btn btn-primary" %>
+     <%= form_tag("/trails", method: "get", :class => "pull-right") do %>
+         <%= label_tag(:q, "Search for:") %>
+         <%= text_field_tag(:q)%>
+         <%= submit_tag("Search", :class => "btn btn-default") %>
+     <% end %>
      
      <div class="row text-center" style="display: flex; flex-wrap: wrap">
    <% @trails.each do |trail| %>

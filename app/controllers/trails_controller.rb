@@ -4,7 +4,13 @@ class TrailsController < ApplicationController
   # GET /trails
   # GET /trails.json
   def index
-    @trails = Trail.all
+    if params[:q]
+      # Return filtered list
+      search_term = params[:q]
+      @trails = Trail.where("name || location ilike ?", "%#{search_term}%")
+    else
+      @trails = Trail.all
+    end
   end
 
   # GET /trails/1
