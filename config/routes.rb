@@ -8,6 +8,8 @@ Rails.application.routes.draw do
   get '/contact', to: 'static_pages#contact'
   get '/about', to: 'static_pages#about'
   get '/privacy', to: 'static_pages#privacy'
+  post 'static_pages/thank_you'
+
 
   root 'static_pages#index'
 
