@@ -2,7 +2,7 @@ class StoriesController < ApplicationController
     before_action :set_story, only: [:show, :edit, :update, :destroy]
     
     def index
-        if params[:id]
+        if params[:q]
             search_term = params[:q]
             @stories = Story.where("story_title || story_body ilike ?", "%#{search_term}%")
         else

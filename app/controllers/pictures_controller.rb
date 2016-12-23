@@ -2,7 +2,7 @@ class PicturesController < ApplicationController
     before_action :set_picture, only: [:show, :edit, :update, :destroy]
     
     def index
-        if params[:id]
+        if params[:q]
             search_term = params[:q]
             @pictures = Picture.where("caption ilike ?", "%#{search_term}%")
         else

@@ -2,7 +2,7 @@ class VideosController < ApplicationController
     before_action :set_video, only: [:show, :edit, :update, :destroy]
     
     def index
-        if params[:id]
+        if params[:q]
             search_term = params[:q]
             @videos = Video.where("video_title || video_description ilike ?", "%#{search_term}%")
         else
