@@ -1,14 +1,24 @@
 <p id="notice"><%= notice %></p>
 <div class="container main">
-     <h1 class="text-center page-heading">Trails</h1>
-     <%= link_to 'New Trail', new_trail_path, :class => "btn btn-primary" %>
-     <%= form_tag("/trails", method: "get", :class => "pull-right") do %>
-         <%= label_tag(:q, "Search for:") %>
-         <%= text_field_tag(:q)%>
-         <%= submit_tag("Search", :class => "btn btn-default") %>
-     <% end %>
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="text-center page-heading">Trails</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-xs-12">
+            <%= link_to 'New Trail', new_trail_path, :class => "btn btn-primary" %>
+        </div>
+        <div class="col-md-6 col-xs-12">
+            <%= form_tag("/trails", method: "get", :class => "pull-right") do %>
+                <%= label_tag(:q, "Search for:") %>
+                <%= text_field_tag(:q)%>
+                <%= submit_tag("Search", :class => "btn btn-default") %>
+             <% end %> 
+        </div>
+    </div>
      
-     <div class="row text-center" style="display: flex; flex-wrap: wrap">
+<div class="row text-center" style="display: flex; flex-wrap: wrap">
    <% @trails.each do |trail| %>
     <div class="col-md-4 col-sm-6 col-xs-12">
         <div class="thumbnail">
@@ -20,12 +30,11 @@
                 <h4><%= trail.location%></h4>
             </div>
             
-            <%= link_to 'Show', trail %>
+           <%= link_to 'Show', trail %>
            <%= link_to 'Edit', edit_trail_path(trail) %>
            <%= link_to 'Destroy', trail, method: :delete, data: { confirm: 'Are you sure?' } %>
         </div>
     </div>
-    
       <% end %>
     </div>
    </div>
