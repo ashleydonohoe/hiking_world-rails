@@ -1,6 +1,7 @@
 class TrailsController < ApplicationController
   before_action :set_trail, only: [:show, :edit, :update, :destroy]
-  #TODO: Only allow admin to add, edit, or delete trails
+  before_filter :authenticate_user!, only: [:edit, :update, :create, :new, :destroy]
+  load_and_authorize_resource
 
   # GET /trails
   # GET /trails.json
